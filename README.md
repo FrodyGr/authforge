@@ -1,6 +1,10 @@
-# 🔐 AuthForge
+<p align="center">
+  <img src="docs/authforge-logo.jpg" alt="AuthForge Logo" width="600"/>
+</p>
 
-> Production-ready authentication starter kit for Spring Boot
+# AuthForge
+
+**Production-ready authentication and authorization starter kit for Spring Boot 3 & Spring Security 6.**
 
 ![Java 21](https://img.shields.io/badge/Java-21-orange?logo=openjdk)
 ![Spring Boot 3.2](https://img.shields.io/badge/Spring%20Boot-3.2-green?logo=spring)
@@ -12,39 +16,33 @@
 
 ---
 
-## ✨ Features
+## Features
 
-| Feature | Status |
-|---------|--------|
-| JWT Authentication (Access + Refresh Tokens) | ✅ |
-| BCrypt Password Hashing | ✅ |
-| Role-Based Access Control (USER, ADMIN) | ✅ |
-| Token Refresh with Rotation | ✅ |
-| Password Recovery (reset token) | ✅ |
-| CORS Configuration | ✅ |
-| Global Exception Handling | ✅ |
-| Frontend Demo (Login, Register, Dashboard, Admin) | ✅ |
-| Docker Compose (PostgreSQL + Backend + Frontend) | ✅ |
-| OAuth2 (Google, GitHub) | ✅ |
-| Two-Factor Authentication (TOTP) | ✅ |
-| Rate Limiting (Bucket4j) | ✅ |
-| Feature Flags (Toggle features via env vars) | ✅ |
-| Email Service (Verification + Password Reset) | ✅ |
-| Unit Tests + JaCoCo Coverage (100%) | ✅ |
-| SonarQube Code Quality (0 Bugs/Smells) | ✅ |
+| Feature | Description | Status |
+| :--- | :--- | :--- |
+| **JWT Authentication** | Stateless authentication with Access Tokens & Refresh Token Rotation | Included |
+| **Two-Factor Auth (2FA)** | Time-based One-Time Password (TOTP) with QR code setup | Included |
+| **OAuth2 Social Login** | Single Sign-On with Google & GitHub providers | Included |
+| **Role-Based Access Control** | Pre-configured `USER` and `ADMIN` roles with method security | Included |
+| **Rate Limiting** | Token-bucket algorithm via Bucket4j protecting auth endpoints | Included |
+| **Feature Flags** | Enable/disable features dynamically via environment variables | Included |
+| **Email Verification & Reset** | HTML templates for registration verification and password reset | Included |
+| **Full-Stack Demo Dashboard** | Responsive web client with Login, Register, 2FA, and Admin management | Included |
+| **Docker Compose** | Pre-wired PostgreSQL, Backend, Frontend, and MailHog development environment | Included |
+| **100% Test Coverage** | Comprehensive unit & integration tests with JaCoCo verification | Included |
 
 ---
 
-## 🚀 Quick Start
+## Quickstart
 
 ### Prerequisites
 
-- [Docker](https://docs.docker.com/get-docker/) & [Docker Compose](https://docs.docker.com/compose/install/)
+* [Docker](https://docs.docker.com/get-docker/) & [Docker Compose](https://docs.docker.com/compose/install/)
 
-### Run with Docker (recommended)
+### Run with Docker Compose
 
 ```bash
-git clone https://github.com/FirstOnDie/authforge.git
+git clone https://github.com/FrodyGr/authforge.git
 cd authforge
 docker-compose up --build
 ```
