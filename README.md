@@ -347,14 +347,20 @@ When the limit is exceeded, the API returns HTTP `429 Too Many Requests`.
 
 ---
 
-## 📜 License
+## Complete API Reference
+
+For a complete catalog of all REST endpoints, request/response DTOs, environment variables, and feature flags, see the [Complete API Reference Guide](docs/API-Reference.md).
+
+---
+
+## License
 
 [MIT](LICENSE) — Use this starter kit freely in your projects.
 
 ---
 
 <p align="center">
-  Built with ☕ Java 21 + 🍃 Spring Boot 3 + 🛡️ Spring Security 6
+  Java 21 &bull; Spring Boot 3 &bull; Spring Security 6
   <br>
-  <strong>by <a href="https://github.com/FirstOnDie">Carlos Expósito</a></strong>
+  <strong>by <a href="https://github.com/FrodyGr">Carlos Expósito</a></strong>
 </p>
